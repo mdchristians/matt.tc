@@ -20,26 +20,19 @@ module.exports = {
         ],
       }
     },
-    {
-  	  resolve: `gatsby-theme-mdx-deck`,
-  	  options: {
-  	    mdx: true,
-  	    contentPath: `content/decks`,
-  	    basePath: `/decks`,
-  	  }
-    },
-    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `matt-christians`,
         short_name: `matt-christians`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#508FFF`,
+        theme_color: `#508FFF`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`, // This path is relative to the root of the site.
       },
