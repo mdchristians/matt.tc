@@ -12,7 +12,7 @@
     "dayjs": "^1.8.22",
     "gatsby": "^2.19.43",
     "gatsby-image": "^2.2.39",
-    "gatsby-plugin-emotion": "^4.1.24",
+    "gatsby-plugin-emotion": "^4.2.0",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-mdx": "^1.0.82",
     "gatsby-plugin-offline": "^3.0.32",
