@@ -1,5 +1,4 @@
 .cache
-gatsby-config.js
 package.json
 package-lock.json
 public

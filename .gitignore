@@ -1,3 +1,6 @@
+.mdx-data/
+.next/
+
 # Logs
 logs
 *.log

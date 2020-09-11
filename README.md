@@ -1,1 +1,1 @@
-Personal page based on Gatsby's default starter
+WIP

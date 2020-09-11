@@ -1,47 +1,31 @@
 {
-  "name": "matt-christians-com",
-  "private": true,
-  "version": "0.1.0",
+  "name": "matt.tc",
+  "description": "Matt's Thoughts",
+  "version": "1.0.0",
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
-    "@mdx-js/mdx": "^1.5.7",
-    "@mdx-js/react": "^1.5.8",
-    "@mdx-js/tag": "^0.20.3",
-    "@theme-ui/prism": "^0.3.0",
-    "dayjs": "^1.8.23",
-    "gatsby": "^2.19.43",
-    "gatsby-image": "^2.3.2",
-    "gatsby-plugin-emotion": "^4.2.1",
-    "gatsby-plugin-manifest": "^2.2.39",
-    "gatsby-plugin-mdx": "^1.1.6",
-    "gatsby-plugin-offline": "^3.1.2",
-    "gatsby-plugin-react-helmet": "^3.2.3",
-    "gatsby-plugin-sharp": "^2.4.3",
-    "gatsby-plugin-theme-ui": "^0.3.0",
-    "gatsby-source-filesystem": "^2.2.3",
-    "gatsby-transformer-sharp": "^2.4.4",
-    "prop-types": "^15.7.2",
+    "@chakra-ui/core": "^1.0.0-rc.2",
+    "@chakra-ui/theme": "^1.0.0-rc.2",
+    "@chakra-ui/theme-tools": "^1.0.0-next.3",
+    "@mapbox/rehype-prism": "^0.5.0",
+    "@mdx-js/loader": "^1.6.16",
+    "@mdx-js/react": "^1.6.16",
+    "framer-motion": "^2.4.3-beta.2",
+    "next": "9.5.1",
+    "next-mdx-enhanced": "git://github.com/johnforte/next-mdx-enhanced",
+    "next-optimized-images": "^2.6.2",
+    "prism-react-renderer": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1",
-    "react-icons": "^3.9.0",
-    "theme-ui": "^0.3.1",
-    "typeface-fira-code": "^1.1.4",
-    "typeface-montserrat": "^0.0.75",
-    "typeface-open-sans": "^0.0.75"
+    "react-icons": "^3.11.0",
+    "react-live": "^2.2.2"
   },
   "devDependencies": {
-    "prettier": "^2.0.4"
+    "babel-plugin-import-glob-array": "^0.2.0"
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   }
 }
