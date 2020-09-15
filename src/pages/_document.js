@@ -1,6 +1,5 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import { ColorModeScript } from '@chakra-ui/core';
 
 class MattChristiansDocument extends Document {
   static async getInitialProps(ctx) {

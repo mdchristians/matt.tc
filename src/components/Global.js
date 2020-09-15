@@ -1,8 +1,6 @@
 import defaultTheme from '@chakra-ui/theme';
 import { mode } from '@chakra-ui/theme-tools';
 
-const merge = require('deepmerge');
-
 const base = {
   headers: '#2E3440',
   subHeaders: '#434C5E',
@@ -18,6 +16,7 @@ const base = {
 };
 
 const theme = {
+  ...defaultTheme,
   fonts: {
     body: 'sweet-sans-pro, system-ui, sans-serif',
     heading: 'sweet-sans-pro',
@@ -47,6 +46,7 @@ const theme = {
   },
   styles: {
     global: (props) => ({
+      ...defaultTheme.styles.global(props),
       body: {
         backgroundColor: mode('light.background', 'dark.background')(props),
       },
@@ -143,4 +143,4 @@ const theme = {
   },
 };
 
-export default merge(defaultTheme, theme);
+export default theme;

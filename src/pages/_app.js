@@ -1,12 +1,11 @@
 import * as React from 'react';
 import * as chakra from '@chakra-ui/core';
-import { ChakraProvider, CSSReset } from '@chakra-ui/core';
+import { ChakraProvider } from '@chakra-ui/core';
 import { MDXProvider } from '@mdx-js/react';
 import theme from '../theme';
-import MDXComponents from '../components/mdx-components';
+import MDXComponents from '../components/mdx';
 
-// see: https://nextjs.org/docs/advanced-features/custom-app
-function MattChristians({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <MDXProvider components={{ ...chakra, ...MDXComponents }}>
@@ -16,4 +15,4 @@ function MattChristians({ Component, pageProps }) {
   );
 }
 
-export default MattChristians;
+export default App;

@@ -1,0 +1,100 @@
+---
+title: 'Build a Component Library with Chakra'
+publishedAt: '2020-09-12'
+summary: 'Building a constraint-based component library for your design system with Chakra'
+---
+
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/core';
+
+## Backstory
+
+Awhile back I was looking for a way to create my own component library. I knew I wanted to use [styled system]() with [emotion]() because it components consistent in a constraint-based theme while still allowing to quickly create layouts. However, I found a few pain points when doing so...
+
+#### 1. Defining Multiple Variants
+
+Think of the different ways a button could look - Medium Primary Solid? Small Seconday Subtle? Large Success Ghost? Extra-Small Danger Outline?
+
+Now don't get me wrong, styled system makes defining variants pretty easy with the `variant` function, but ends up getting a little cluttered when combining variants while making background colors and text colors accessible.
+
+#### 2. Allowing Custom Themes
+
+There are plenty of ways to define colors in a theme and I ended up just using [open color](https://yeun.github.io/open-color/). This gives anyone using the base theme plenty of options, but gets tricky when allowing custom themes.
+
+Making sure all themes work correctly with all possible component appearances working in their different states was next to impossible.
+
+My goal was to make this work out of the box while using the the color palette from the theme, but it started to seem more and more like using basic default colors like "primary", "secondary", etc. with a tool like polished for the various states would be much easier...
+
+#### A New, Easier Way to Create a Component Library.
+
+This was about the time I started to look at how Chakra was handling this, especially in v1, which was RC at the time.
+
+A lot of the things I was trying to accomplish Chakra had already done, so why re-invent the wheel? Better yet, they exported the tools needed to extended the base great and accessible components that they already created!
+
+## Building a Component Library, with a Component Library
+
+First things first, we need to define our own theme tokens and a good place to start would to be to checkout what Chakra's default theme looks like and what we want to override from it.
+
+Say we just want to change some of the colors, we would override those by simply doing something like this...
+
+```jsx
+import defaultTheme from '@chakra-ui/theme';
+
+export const theme = {
+  ...defaultTheme,
+  colors: {
+    ...defaultTheme.colors,
+    primary: {
+      main: '#7048e8',
+      hover: '#9775fa',
+    },
+    secondary: {
+      main: '#1098ad',
+      hover: '#3bc9db',
+    },
+  },
+};
+```
+
+Now this is extremely basic and doesn't really say much about extending Chakra, so let's take it a step farther. Say we want to completely change the way the base button looks and the different variants we could use with it...
+
+Chakra exports a function called `styleConfig` that makes this extremely easy.
+
+Using the `styleConfig`, let's create `Button` component with a variant (solid, outline), appearance (default, primary, secondary), and size (sm, md, lg) props that use our theme's tokens.
+
+<Tabs>
+  <TabList>
+    <Tab>theme.js</Tab>
+    <Tab>foo.js</Tab>
+  </TabList>
+
+
+  <TabPanels>
+    <TabPanel>
+      <pre>
+        <code>
+          fdsafsa
+        </code>
+      </pre>
+    </TabPanel>
+    <TabPanel>
+      <pre>
+        <code>
+          fdafdsfsafdafsda
+        </code>
+      </pre>
+    </TabPanel>
+  </TabPanels>
+</Tabs>
+
+
+```jsx tabs
+/** hello.js **/
+import defaultTheme from '@chakra-ui/theme';
+
+console.log(defaultTheme);
+
+/** goodbye.js **/
+import foo from '@chakra-ui/core';
+
+console.log(foo);
+```

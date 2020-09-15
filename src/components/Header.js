@@ -3,8 +3,7 @@ import {
   Flex,
   IconButton,
   useColorMode,
-  Box,
-  useColorModeValue
+  useColorModeValue,
 } from '@chakra-ui/core';
 import NextLink from 'next/link';
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -21,7 +20,7 @@ const Header = ({ contain = false }) => {
       py="4"
       px={contain ? '0' : '4'}
     >
-      <NextLink href="/">
+      <NextLink href="/thoughts">
         <Heading as="h1" size="md">
           Matt Christians
         </Heading>
