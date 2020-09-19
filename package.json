@@ -3,22 +3,25 @@
   "description": "Matt's Thoughts",
   "version": "1.0.0",
   "dependencies": {
-    "@chakra-ui/core": "^1.0.0-rc.2",
-    "@chakra-ui/theme": "^1.0.0-rc.2",
-    "@chakra-ui/theme-tools": "^1.0.0-next.3",
+    "@chakra-ui/core": "^1.0.0-rc.3",
+    "@chakra-ui/theme-tools": "^1.0.0-rc.3",
+    "@chakra-ui/utils": "^1.0.0-rc.3",
     "@mapbox/rehype-prism": "^0.5.0",
     "@mdx-js/loader": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
     "deepmerge": "^4.2.2",
     "framer-motion": "^2.4.3-beta.2",
     "next": "9.5.1",
-    "next-mdx-enhanced": "git://github.com/johnforte/next-mdx-enhanced",
+    "next-mdx-enhanced": "^4.0.0",
     "next-optimized-images": "^2.6.2",
     "prism-react-renderer": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
-    "react-live": "^2.2.2"
+    "react-live": "^2.2.2",
+    "remark-autolink-headings": "^6.0.1",
+    "remark-mdx": "^1.6.18",
+    "remark-slug": "^6.0.0"
   },
   "devDependencies": {
     "babel-plugin-import-glob-array": "^0.2.0"

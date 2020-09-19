@@ -29,7 +29,7 @@ const Header = ({ contain = false }) => {
         aria-label="Toggle dark mode"
         icon={<SwitchIcon />}
         onClick={toggleColorMode}
-      ></IconButton>
+      />
     </Flex>
   );
 };

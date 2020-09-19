@@ -1,32 +1,6 @@
-import React, { useState } from 'react';
-
-import {
-  Box,
-  Button,
-  chakra,
-  useClipboard,
-  useColorModeValue,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanels,
-  TabPanel,
-} from '@chakra-ui/core';
-import { LiveEditor, LivePreview, LiveProvider } from 'react-live';
+import React from 'react';
+import { LiveEditor, LiveProvider } from 'react-live';
 import PrismTheme from './prism-theme';
-
-/**
- * Styled Code Preview
- */
-const LiveCodePreview = chakra(LivePreview, {
-  baseStyle: {
-    fontFamily: 'body',
-    mt: 5,
-    p: 3,
-    borderWidth: 1,
-    borderRadius: '12px',
-  },
-});
 
 const CodeBlockCode = ({ code, props }) => {
   const { className, live = false, manual, render, children, ...rest } = props;
@@ -43,9 +17,9 @@ const CodeBlockCode = ({ code, props }) => {
     >
       <LiveEditor
         style={{
-          fontSize: 14,
+          fontSize: 13,
           overflowX: 'auto',
-          fontFamily: 'SF Mono, Menlo, monospace',
+          lineHeight: 1.4,
         }}
       />
     </LiveProvider>

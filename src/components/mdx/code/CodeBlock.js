@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import {
-  Box,
-  Button,
-  chakra,
-  useClipboard,
-  useColorModeValue,
-  Tabs,
-  TabList,
-  TabPanels,
-  TabPanel,
-} from '@chakra-ui/core';
+import { Box, Tabs, TabList, TabPanels, TabPanel } from '@chakra-ui/core';
 import { createCodeTabs } from './utils';
 import CodeBlockFile from './CodeBlockFile';
 import CodeBlockCode from './CodeBlockCode';
 
+/**
+ * Wrapper Box for code
+ */
 const CodeContainer = (props) => (
-  <Box mx="-60px" padding="4" rounded="4px" my="4" bg="#2d2a2e" {...props} />
+  <Box mx="-40px" padding="3" rounded="3px" my="3" bg="#2d2a2e" {...props} />
 );
 
 const CodeBlock = ({ tabs, named, ...rest }) => {

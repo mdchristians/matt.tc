@@ -1,16 +1,5 @@
-import React, { useState } from 'react';
-import {
-  Box,
-  Button,
-  chakra,
-  useClipboard,
-  useColorModeValue,
-  Tabs,
-  TabList,
-  Tab,
-  TabPanels,
-  TabPanel,
-} from '@chakra-ui/core';
+import React from 'react';
+import { Tab } from '@chakra-ui/core';
 
 const CodeBlockFile = ({ tab }) => {
   return (

@@ -1,20 +1,5 @@
-import React, { useState } from 'react';
-import {
-  Box,
-  Button,
-  chakra,
-  OrderedList,
-  UnorderedList,
-  ListItem,
-  Pre as ChakraPre,
-  Link,
-  Text,
-  Kbd,
-  useClipboard,
-  useColorModeValue,
-} from '@chakra-ui/core';
-import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live';
-import MyTheme from './code/prism-theme';
+import React from 'react';
+import { chakra, useColorModeValue } from '@chakra-ui/core';
 
 const Table = (props) => (
   <chakra.div overflowX="auto">

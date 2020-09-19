@@ -1,20 +1,5 @@
-import React, { useState } from 'react';
-import {
-  Box,
-  Button,
-  chakra,
-  OrderedList,
-  UnorderedList,
-  ListItem,
-  Pre as ChakraPre,
-  Link,
-  Text,
-  Kbd,
-  useClipboard,
-  useColorModeValue,
-} from '@chakra-ui/core';
-import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live';
-import MyTheme from './code/prism-theme';
+import React from 'react';
+import { chakra } from '@chakra-ui/core';
 
 const LinkedHeading = (props) => (
   <chakra.h2
@@ -38,7 +23,7 @@ const LinkedHeading = (props) => (
       {props.id && (
         <chakra.a
           aria-label="anchor"
-          color="headers"
+          color="#5E81AC"
           fontWeight="normal"
           outline="none"
           _focus={{ opacity: 1, boxShadow: 'outline' }}

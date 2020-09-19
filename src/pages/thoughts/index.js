@@ -5,7 +5,7 @@ import {
   Box,
   Flex,
   VStack,
-  StackDivider
+  StackDivider,
 } from '@chakra-ui/core';
 import { useRouter } from 'next/router';
 import { posts } from '../../utils';
