@@ -22,3 +22,14 @@ export const logEvent = (options) => {
     console.error('GA Failure', err);
   }
 };
+
+export const logPageMetric = (name, label, id, value) => {
+  if (label === 'web-vital') {
+    window.gtag('event', name, {
+      event_category: 'Web Vitals',
+      value: Math.round(name === 'CLS' ? value * 1000 : value), // values must be integers
+      event_label: id, // id unique to current page load
+      non_interaction: true, // avoids affecting bounce rate.
+    });
+  }
+};
