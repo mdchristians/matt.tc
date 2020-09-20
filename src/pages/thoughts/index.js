@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   Heading,
   Text,
-  Box,
+  Container,
   Flex,
   VStack,
   StackDivider,
@@ -15,12 +15,9 @@ const Thoughts = () => {
   const router = useRouter();
 
   return (
-    <Box margin="0 auto" width="100%" maxW="1200px">
+    <>
       <Header />
-      <Box p="4">
-        <Heading as="h2" size="lg" mb="5">
-          Thoughts
-        </Heading>
+      <Container maxWidth="80ch" className="mdx" px="4">
         <VStack
           align="flex-start"
           divider={<StackDivider borderColor="gray.900" />}
@@ -32,16 +29,24 @@ const Thoughts = () => {
               onClick={() => router.push(`/${fm.path}`)}
               direction="column"
               justify="flex-start"
+              cursor="pointer"
             >
-              <Heading as="h3" size="md">
+              <Heading
+                as="h3"
+                size="md"
+                color="#AB9DF2"
+                textTransform="uppercase"
+                letterSpacing="wide"
+                mb={0}
+              >
                 {fm.title}
               </Heading>
               <Text>{fm.summary}</Text>
             </Flex>
           ))}
         </VStack>
-      </Box>
-    </Box>
+      </Container>
+    </>
   );
 };
 

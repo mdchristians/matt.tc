@@ -1,0 +1,4 @@
+Sitemap: https://matt.tc/sitemap.xml
+
+User-agent: *
+Allow: /

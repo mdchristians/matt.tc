@@ -10,9 +10,14 @@ class MattChristiansDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
-          <link rel="stylesheet" href="https://use.typekit.net/wbw7aaq.css" />
+          <title>Matt Christians | Software Engineer</title>
+          <meta
+            name="description"
+            content="Matt Christians | Software Engineer"
+          />
+          <link rel="stylesheet" href="https://use.typekit.net/tuf5pev.css" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}

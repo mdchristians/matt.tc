@@ -13,6 +13,13 @@ module.exports = withMdxEnhanced({
   },
 })({
   pageExtensions: ['js', 'mdx'],
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./scripts/generate-sitemap');
+    }
+
+    return config;
+  },
 });
 
 function generatePostDetails(resourcePath) {
