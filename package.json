@@ -10,7 +10,7 @@
     "@mdx-js/loader": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
     "deepmerge": "^4.2.2",
-    "framer-motion": "^2.4.3-beta.2",
+    "framer-motion": "^2.6.15",
     "next": "9.5.1",
     "next-mdx-enhanced": "^4.0.0",
     "next-optimized-images": "^2.6.2",
