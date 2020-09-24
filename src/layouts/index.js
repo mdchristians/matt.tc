@@ -15,7 +15,6 @@ function Layout({ frontMatter, children }) {
 }
 
 function MdxLayout({ content, frontMatter }) {
-  console.log('content: ', content);
   console.log('frontMatter: ', frontMatter);
   return (
     <>
@@ -26,7 +25,7 @@ function MdxLayout({ content, frontMatter }) {
       <Header />
       <Container maxWidth="70ch" className="mdx">
         <Box as="article" mt="8">
-          <Heading size="lg" mb="6">
+          <Heading as="h1" size="lg" mb="6">
             {frontMatter.title}
           </Heading>
           {content}

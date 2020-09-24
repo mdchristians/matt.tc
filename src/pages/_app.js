@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Router from 'next/router';
 import { ChakraProvider } from '@chakra-ui/core';
+import { DefaultSeo } from 'next-seo';
+import SEO from '../../next-seo.config';
 import theme from '../theme';
 import { logPageView, logPageMetric } from '../utils';
 
@@ -14,9 +16,12 @@ export function reportWebVitals(metric) {
 
 function App({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <DefaultSeo {...SEO} />
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
 

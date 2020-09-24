@@ -6,6 +6,7 @@ const LinkedHeading = (props) => (
     css={{
       '&[id]': {
         pointerEvents: 'none',
+        marginTop: '1.5em',
       },
       '&[id]::before': {
         display: 'block',

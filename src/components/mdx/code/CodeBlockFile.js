@@ -14,6 +14,9 @@ const CodeBlockFile = ({ tab }) => {
       border="none"
       fontSize="sm"
       cursor="pointer"
+      borderBottomWidth="1px"
+      borderBottomColor="transparent"
+      borderBottomStyle="solid"
       _selected={{
         outline: 'unset',
         boxShadow: 'unset',

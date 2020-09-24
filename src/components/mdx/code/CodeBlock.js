@@ -9,7 +9,7 @@ import CodeBlockCode from './CodeBlockCode';
  * Wrapper Box for code
  */
 const CodeContainer = (props) => (
-  <Box mx="-40px" padding="3" rounded="3px" my="3" bg="#2d2a2e" {...props} />
+  <Box mx="-40px" padding="3" rounded="3px" my="6" bg="#2d2a2e" {...props} />
 );
 
 const CodeBlock = ({ tabs, named, ...rest }) => {

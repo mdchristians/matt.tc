@@ -1,5 +1,4 @@
 import { extendTheme } from '@chakra-ui/core';
-import { runIfFn, merge } from '@chakra-ui/utils';
 import { mode } from '@chakra-ui/theme-tools';
 
 const base = {
@@ -24,11 +23,11 @@ const MyTheme = extendTheme({
   },
   fontWeights: {
     body: 400,
-    heading: 700,
+    heading: 400,
     bold: 700,
   },
   lineHeights: {
-    body: 1.5,
+    body: 1.6,
     heading: 1.125,
   },
   colors: {
@@ -49,6 +48,7 @@ const MyTheme = extendTheme({
       body: {
         // The mode(...) function is the same as props.colorMode === "dark" ? darkMode : lightMode
         backgroundColor: mode('light.background', 'dark.background')(props),
+        fontFamily: 'body',
       },
       h1: {
         color: mode('light.headers', 'dark.headers')(props),

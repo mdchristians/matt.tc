@@ -1,3 +1,4 @@
+const readingTime = require('reading-time');
 const withMdxEnhanced = require('next-mdx-enhanced');
 
 module.exports = withMdxEnhanced({
@@ -9,7 +10,7 @@ module.exports = withMdxEnhanced({
   rehypePlugins: [],
   extendFrontMatter: {
     process: (mdxContent, frontMatter) =>
-      generatePostDetails(frontMatter.__resourcePath),
+      generatePostDetails(frontMatter.__resourcePath, mdxContent),
   },
 })({
   pageExtensions: ['js', 'mdx'],
@@ -22,7 +23,7 @@ module.exports = withMdxEnhanced({
   },
 });
 
-function generatePostDetails(resourcePath) {
+function generatePostDetails(resourcePath, mdxContent) {
   const pathArr = resourcePath.split('/');
 
   return {
@@ -30,5 +31,6 @@ function generatePostDetails(resourcePath) {
     slug: pathArr[1].replace('.mdx', ''),
     path: resourcePath.replace('.mdx', ''),
     page: pathArr[0],
+    readingTime: readingTime(mdxContent),
   };
 }

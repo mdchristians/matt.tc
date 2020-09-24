@@ -7,20 +7,33 @@ const IndexPage = () => {
 
   return (
     <Flex pt="30vh" align="center" justify="center" direction="column">
-      <Heading as="h1" color={headingColor}>
+      <Heading
+        as="h1"
+        fontSize={['2xl', '4xl', '5xl', '6xl']}
+        color={headingColor}
+      >
         Matt Christians
       </Heading>
       <Flex mt="3">
-        <NextLink href="#">
-          <Link mr="15px" color={linkColor}>
-            Github
-          </Link>
-        </NextLink>
-        <NextLink href="#">
-          <Link mr="15px" color={linkColor}>
-            Twitter
-          </Link>
-        </NextLink>
+        <Link
+          mr="15px"
+          color={linkColor}
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://github.com/mdchristians"
+        >
+          Github
+        </Link>
+
+        <Link
+          mr="15px"
+          color={linkColor}
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://twitter.com/Matt_Christians"
+        >
+          Twitter
+        </Link>
         <NextLink href="/thoughts">
           <Link color={linkColor}>Thoughts</Link>
         </NextLink>

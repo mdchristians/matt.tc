@@ -1,5 +1,4 @@
 import {
-  Heading,
   Flex,
   IconButton,
   useColorMode,
@@ -22,7 +21,7 @@ const Header = ({ contain = false }) => {
       px={contain ? '0' : '8'}
     >
       <NextLink href="/thoughts" passHref>
-        <Logo color={iconColor} boxSize={20} />
+        <Logo color={iconColor} boxSize={20} height="unset" />
       </NextLink>
       <IconButton
         variant="outline"
