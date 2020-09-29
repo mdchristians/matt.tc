@@ -3,7 +3,7 @@
   "description": "Matt's Thoughts",
   "version": "1.0.0",
   "dependencies": {
-    "@chakra-ui/core": "^1.0.0-rc.3",
+    "@chakra-ui/core": "^1.0.0-rc.5",
     "@chakra-ui/theme-tools": "^1.0.0-rc.3",
     "@chakra-ui/utils": "^1.0.0-rc.3",
     "@mapbox/rehype-prism": "^0.5.0",
