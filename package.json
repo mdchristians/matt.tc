@@ -12,7 +12,7 @@
     "next": "9.5.1",
     "next-mdx-enhanced": "^4.0.0",
     "next-optimized-images": "^2.6.2",
-    "next-seo": "^4.7.3",
+    "next-seo": "^4.14.0",
     "prism-react-renderer": "^1.1.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
