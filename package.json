@@ -10,7 +10,7 @@
     "@mdx-js/loader": "^1.6.16",
     "@mdx-js/react": "^1.6.16",
     "next": "9.5.1",
-    "next-mdx-enhanced": "^4.0.0",
+    "next-mdx-enhanced": "^5.0.0",
     "next-optimized-images": "^2.6.2",
     "next-seo": "^4.7.3",
     "prism-react-renderer": "^1.1.1",
